@@ -8,7 +8,7 @@ let mongoose = require("mongoose");
 let app = express();
 
 mongoose.connect(
- //place the db configuration
+//dg configuration
 );
 
 let fs = require("fs");
