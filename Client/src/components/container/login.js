@@ -23,7 +23,7 @@ const Login = (props) => {
     const pwd = bcrypt.hashSync(state.password, salt);
 
     axios
-      .post("http://localhost:2000/login", {
+      .post("http://localhost:8000/login", {
         username: state.username,
         password: pwd,
       })
@@ -32,7 +32,6 @@ const Login = (props) => {
         localStorage.setItem("user_id", res.data.id);
         localStorage.setItem("username", res.data.username);
         window.dispatchEvent(new Event("storage"));
-
         navigate("/list");
       })
       .catch((err) => {

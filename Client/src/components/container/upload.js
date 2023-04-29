@@ -43,7 +43,7 @@ const Upload = (props) => {
     formData.append("file", fileInput.files[0]);
 
     axios
-      .post("http://localhost:2000/addItem", formData, {
+      .post("http://localhost:8000/addItem", formData, {
         headers: {
           "content-type": "multipart/form-data",
           token: token,

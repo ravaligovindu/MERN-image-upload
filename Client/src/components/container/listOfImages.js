@@ -19,7 +19,7 @@ const List = (props) => {
 
   const getImages = (token) => {
     axios
-      .get(`http://localhost:2000/getItem`, {
+      .get(`http://localhost:8000/getItem`, {
         headers: {
           token: token,
         },
@@ -43,7 +43,7 @@ const List = (props) => {
       {images?.map((row) => (
         <div align="center" style={{ padding: "20px" }}>
           <img
-            src={`http://localhost:2000/${row.image}`}
+            src={`http://localhost:8000/${row.image}`}
             width="70"
             height="70"
           />
@@ -61,3 +61,6 @@ export default List;
         <Link href="/upload">Back to upload</Link>
       </div> */
 }
+
+
+

@@ -4,7 +4,7 @@ import { Button, TextField, Link } from "@material-ui/core";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const URL = "http://localhost:2000/signup";
+const URL = "http://localhost:8000/signup";
 const Signup = (props) => {
   const [state, setState] = useState({
     username: "",
